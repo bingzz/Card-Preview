@@ -1,0 +1,8 @@
+//640, 1440
+$breakpoint: ("desktop": 40em, "mobile": 90em);
+
+@mixin breakpoint($size) {
+    @media(min-width: map-get($breakpoint, $size)) {
+        @content;
+    }
+}

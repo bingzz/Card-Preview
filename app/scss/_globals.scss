@@ -1,0 +1,44 @@
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    color: $white;
+    padding: 0;
+    margin: 0;
+    
+    @include breakpoint(mobile) {
+        overflow: hidden;
+    }
+}
+
+body {
+    display: block;
+    background-color: $veryDarkBlue;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-size: 1.8125rem;
+    font-weight: 700;
+    color: $slightTransparentWhiteMain;
+    text-align: center;
+
+    @include breakpoint(desktop) {
+        text-align: left;
+    }
+}
+
+p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: $slightTransparentWhiteHead;
+    line-height: 1.45;
+
+    text-align: center;
+
+    @include breakpoint(desktop) {
+        text-align: left;
+    }
+}
+
+
+

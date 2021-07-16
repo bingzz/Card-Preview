@@ -1,0 +1,143 @@
+.card {
+  background-color: #aa5cdb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .card {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card_contents {
+  background-color: #1b1938;
+  padding: 2.8175rem 2.1875rem 2.1875rem 1.125rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .card_contents {
+    padding: 4.5rem 6.875rem 3.75rem 4rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+}
+
+.card_image {
+  background-image: url("/images/image-header-mobile.jpg");
+  mix-blend-mode: multiply;
+  background-size: cover;
+  height: 15em;
+}
+
+@media (min-width: 40em) {
+  .card_image {
+    background: url("/images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.highlight {
+  color: #aa5cdb;
+}
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 90em) {
+  html {
+    overflow: hidden;
+  }
+}
+
+body {
+  display: block;
+  background-color: #090b1a;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 1.8125rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  h1 {
+    text-align: left;
+  }
+}
+
+p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.45;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  p {
+    text-align: left;
+  }
+}
+
+.stat_grid {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 4.6875rem;
+  gap: 2.25rem;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .stat_grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    gap: 3.625rem;
+  }
+}
+
+.stat_number {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.0625rem;
+}
+
+@media (min-width: 40em) {
+  .stat_number {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.stat_item {
+  font-family: 'Lexend Deca';
+  letter-spacing: 0.0625rem;
+  font-size: .625rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+/*# sourceMappingURL=style.css.map */

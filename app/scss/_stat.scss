@@ -1,0 +1,35 @@
+.stat {
+    
+    &_grid {
+        display: grid;
+        margin-top: 4.6875rem;
+        gap: 2.25rem;
+        text-align: center;
+        
+
+        @include breakpoint(desktop) {
+            grid-template-columns: repeat(3, 1fr);
+            text-align: left;
+            gap: 3.625rem;
+        }
+    }
+
+    &_number {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: $slightTransparentWhiteMain;
+        margin-bottom: 1.0625rem;
+        
+        @include breakpoint(desktop) {
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    &_item {
+        font-family: 'Lexend Deca';
+        letter-spacing: 0.0625rem;
+        font-size: .625rem;
+        text-transform: uppercase;
+        color: $slightTransparentWhiteHead;
+    }
+}
